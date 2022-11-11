@@ -2,7 +2,8 @@
 let i=0
 do {
     i++;
-    console.log(i);
+    // Commented out by Ethan
+    // console.log(i);
 } while (i<1000)
 
 let object = {
@@ -22,20 +23,43 @@ function logOutEntry() {
     console.log(cleaned)
 }
 
-logOutKey()
-logOutEntry()
+// Commented out by Ethan
+// logOutKey()
+// logOutEntry()
 
-const arrayOfPersons = {
+const arrayOfPersons = [
+    {
     firstName: 'Jeff',
     lastName: 'Dugg',
     birthDate: 'Feb 11, 1992',
-    gender: 'male',
+    gender: 'male', 
+    },
+    {
     firstName: 'Jonathan',
     lastName: 'Vo',
     birthDate: 'June 20, 1995',
     gender: 'male',
+    },
+    {
     firstName: 'Abigail',
     lastName: 'Anderson',
     birthDate: 'August 15, 1990',
+    gender: 'female',
+    },
+    {
+    firstName: 'Jane',
+    lastName: 'Doe',
+    birthDate: 'Jan 5, 1925',
     gender: 'female'
+    }
+]
+
+
+function forLoopPersons() {
+    for(let i = 0; i < arrayOfPersons.length ;i++) {
+        // console.log(Object.keys(arrayOfPersons))
+        console.log(Object.entries(arrayOfPersons))
+    }
 }
+
+forLoopPersons()
