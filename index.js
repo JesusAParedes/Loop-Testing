@@ -1,6 +1,8 @@
+
 let i=0
 do {
     i++;
+    // Commented out by Ethan
     // console.log(i);
 } while (i<1000)
 
@@ -21,8 +23,9 @@ function logOutEntry() {
     console.log(cleaned)
 }
 
-logOutKey()
-logOutEntry()
+// Commented out by Ethan
+// logOutKey()
+// logOutEntry()
 
 const arrayOfPersons = [
     {
@@ -41,20 +44,18 @@ const arrayOfPersons = [
     firstName: 'Abigail',
     lastName: 'Anderson',
     birthDate: 'August 15, 1990',
-    gender: 'female'
+    gender: 'female',
     },
     {
     firstName: 'Jane',
     lastName: 'Doe',
     birthDate: 'Jan 5, 1925',
     gender: 'female'
-    }
+    },
 ]
 
 function forLoopPersons() {
     for(let i = 0; i < arrayOfPersons.length ;i++) {
-        // console.log(Object.keys(arrayOfPersons))
-        console.log(Object.entries(arrayOfPersons))
         console.log(arrayOfPersons[i].birthDate)
         if(arrayOfPersons[i].birthDate.slice(-1) % 2 == 1) {
             console.log(Object.entries(arrayOfPersons[i]))
