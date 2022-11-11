@@ -1,3 +1,10 @@
+
+let i=0
+do {
+    i++;
+    console.log(i);
+} while (i<1000)
+
 let object = {
     firstName: 'Jane',
     lastName: 'Doe',
