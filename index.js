@@ -10,4 +10,10 @@ function logOutKey() {
     console.log(cleaned)
 }
 
+function logOutEntry() {
+    let cleaned = Object.entries(object)
+    console.log(cleaned)
+}
+
 logOutKey()
+logOutEntry()
