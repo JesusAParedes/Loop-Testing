@@ -24,3 +24,18 @@ function logOutEntry() {
 
 logOutKey()
 logOutEntry()
+
+const arrayOfPersons = {
+    firstName: 'Jeff',
+    lastName: 'Dugg',
+    birthDate: 'Feb 11, 1992',
+    gender: 'male',
+    firstName: 'Jonathan',
+    lastName: 'Vo',
+    birthDate: 'June 20, 1995',
+    gender: 'male',
+    firstName: 'Abigail',
+    lastName: 'Anderson',
+    birthDate: 'August 15, 1990',
+    gender: 'female'
+}
