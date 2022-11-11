@@ -57,8 +57,10 @@ const arrayOfPersons = [
 
 function forLoopPersons() {
     for(let i = 0; i < arrayOfPersons.length ;i++) {
-        // console.log(Object.keys(arrayOfPersons))
-        console.log(Object.entries(arrayOfPersons))
+        console.log(arrayOfPersons[i].birthDate)
+        if(arrayOfPersons[i].birthDate.slice(-1) % 2 == 1) {
+            console.log(Object.entries(arrayOfPersons[i]))
+        }
     }
 }
 
