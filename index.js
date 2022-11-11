@@ -32,7 +32,7 @@ const arrayOfPersons = [
     firstName: 'Jeff',
     lastName: 'Dugg',
     birthDate: 'Feb 11, 1992',
-    gender: 'male', 
+    gender: 'male',
     },
     {
     firstName: 'Jonathan',
@@ -51,9 +51,8 @@ const arrayOfPersons = [
     lastName: 'Doe',
     birthDate: 'Jan 5, 1925',
     gender: 'female'
-    }
+    },
 ]
-
 
 function forLoopPersons() {
     for(let i = 0; i < arrayOfPersons.length ;i++) {
@@ -64,4 +63,13 @@ function forLoopPersons() {
     }
 }
 
-forLoopPersons()
+let userFullInfo = arrayOfPersons.map(function(element){
+    return `${element.firstName} ${element.lastName} ${element.birthDate} ${element.gender}`;
+})
+console.log(userFullInfo);
+
+
+const male = arrayOfPersons.filter(prop => {
+    return prop.gender === 'male'
+});
+console.log(male);
