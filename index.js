@@ -81,6 +81,4 @@ console.log(before1990);
 const valuebefore = arrayOfPersons.some(year => year.birthDate.slice(-4) < '1990');
 console.log(valuebefore);
 
-//current date
-Date();
 
