@@ -75,10 +75,12 @@ const male = arrayOfPersons.filter(prop => {
 console.log(male);
 
 
+
 const before1990 = arrayOfPersons.filter(year => year.birthDate.slice(-4) < '1990');
 console.log(before1990);
 
 const valuebefore = arrayOfPersons.some(year => year.birthDate.slice(-4) < '1990');
 console.log(valuebefore);
+
 
 
